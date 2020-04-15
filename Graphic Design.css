@@ -1,0 +1,217 @@
+body,html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background:white;
+}
+
+/* h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    padding-top: 30px;
+    letter-spacing: .10em;
+    text-transform: uppercase;
+    text-align: center;
+    color: darkslategray;
+} */
+
+li{
+    font-weight: 300;
+    display: inline;
+}
+
+.button2{
+    padding-left: 0px;
+}
+
+    /* Logo Underline Animation Below */
+/*  a {
+    color: Black;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+ a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: Black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+ a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }  */
+
+  #Layer_1 {
+    width: 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+    display: inline-block;
+  }
+
+  #Layer_1:hover {
+    fill: darkgray;
+  }
+
+
+/* #Layer_1{
+    -webkit-animation: color 5s ease infinite;
+    -o-animation: color 5s ease infinite;
+    -moz-animation: color 5s ease linear infinite;
+    animation: color 5s ease infinite;
+  }
+  
+  @keyframes color {
+    0%, 100%{
+    fill: #AFDFDF;
+    }
+    75% {
+      fill: #F3B456;
+    }
+    50% {
+    fill: #946BAE;
+   }
+    20% {
+      fill: #F4ABAB;
+    }
+    } */
+
+    /* Illustration Button Below */
+.button2 a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+      }
+.button2 a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: black;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+.button2 a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+
+      /* Graphic Design Button Below */
+.button1 a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+      }
+.button1 a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: black;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+.button1 a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      }
+
+ 
+      /* Graphic Design Title Fade in Left */
+      @-webkit-keyframes fadeInLeft {
+        from {
+            opacity:0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
+        to {
+            opacity:1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
+    }
+    @-moz-keyframes fadeInLeft {
+        from {
+            opacity:0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
+        to {
+            opacity:1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
+    }
+    @keyframes fadeInLeft {
+        from {
+            opacity:0;
+            -webkit-transform: translatex(-100px);
+            -moz-transform: translatex(-100px);
+            -o-transform: translatex(-100px);
+            transform: translatex(-100px);
+        }
+        to {
+            opacity:1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
+    }
+    .in-left {
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 0.6s;
+        -o-animation-duration: 0.6s;
+        animation-duration: 0.6s;
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        -o-animation-duration:0.6s;
+        animation-delay: 0.6s;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+        padding-top: 30px;
+        letter-spacing: .10em;
+        text-transform: uppercase;
+        text-align: center;
+        color: darkslategray;
+    }     

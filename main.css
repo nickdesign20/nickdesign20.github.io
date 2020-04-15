@@ -1,0 +1,503 @@
+
+/* li{
+    font-weight: 300;
+    display: inline;
+} */
+.container{
+  margin-right:3em;
+  min-width:100%;
+  /* background-color: green; */
+  /* width:100%; */
+  height:100vh;
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+        "nav"
+        "icon"
+        "Portrait"
+        "content"
+        "footer";
+}
+
+.button1{
+    grid-area:nav;
+}
+
+.button2{
+    padding-left: 80px;
+    grid-area:nav;
+}
+
+h2{
+    padding-left: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding-top: 20px;
+    letter-spacing: .10em;
+    grid-area:icon;
+}
+
+/* .button1 {
+    overflow: hidden;
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.button2 {
+    overflow: hidden;
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 0px;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: purple;
+    font-size: 16px;
+    
+  }
+  
+  a:active {
+    text-decoration: underline;
+  } */
+ 
+  body,html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background:white;
+  }
+
+  h3 {
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    text-align: center;
+    grid-area: content;
+  }
+
+  .AboutMe {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    grid-area: content;
+  }
+
+  .AboutMe2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-area: content;
+  }
+
+  .AboutMe3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    grid-area: content;
+  }
+
+  .fa-instagram {
+    padding-left: 40px;
+    /* padding-top: 50px; */
+  }
+
+  /* ul { 
+    margin: 150px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  } */
+  /* li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  } */
+  
+  /* nav {
+    background-color: lightgray;
+  } */
+ nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+ nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+ nav a:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+footer{
+  background-color: lightgray;
+} 
+
+footer ul a{
+  grid-area: footer;
+  color: black;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+footer ul a:after {
+  grid-area: footer;
+}
+
+footer ul a:hover {
+  grid-area: footer;
+  opacity: 1;
+  color: lightskyblue;
+}
+
+@media screen and (max-width: 800px) {
+
+    /* .container{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "h"
+        "b"
+        "c"
+        "l"
+        "r"
+        "a"
+        "e"
+        "s"
+        "f";
+    } */
+    /* .body{
+        font-family: 'Roboto', sans-serif;
+    } */
+    
+    li{
+        font-weight: 300;
+        display: inline;
+    }
+
+    img {
+      width: 400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-top: 500px; */
+      margin-top: 400px;
+      border-radius: 50%;
+      grid-area: Portrait;
+  }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+    }
+}
+
+#Layer_1 {
+    width: 350px;
+    padding-top: 200px;
+    padding-left: 90px;
+    grid-area:icon;
+  }
+  
+#Layer_1{
+    -webkit-animation: color 5s ease infinite;
+    -o-animation: color 5s ease infinite;
+    -moz-animation: color 5s ease linear infinite;
+    animation: color 5s ease infinite;
+  }
+  
+  @keyframes color {
+    0%, 100%{
+    fill: #AFDFDF;
+    }
+    75% {
+      fill: #F3B456;
+    }
+    50% {
+    fill: #946BAE;
+   }
+    20% {
+      fill: #F4ABAB;
+    }
+    }
+
+
+    /* <!-- Button to get back to top of page --> */
+    #back2Top {
+      width: 5px;
+      line-height: 5px;
+      overflow: hidden;
+      z-index: 999;
+      display: none;
+      cursor: pointer;
+      -moz-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      position: fixed;
+      bottom: 20px;
+      right: 0;
+      /* background-color: #DDD; */
+      color: #555;
+      text-align: center;
+      font-size: 30px;
+      text-decoration: none;
+  }
+  #back2Top:hover {
+      /* background-color: #DDF; */
+      color: #000;
+  }    
+
+
+
+
+  /* Desktop styling below */
+  @media (min-width:1040px){
+    .container{
+      width:100%;
+      height:100vh;
+      display:grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "icon content"
+            "sidebar content"
+            "sidebar content"
+            "footer footer";
+    }
+    .fa-instagram {
+      padding-left: 40px;
+    }
+    h3 {
+      padding-top: 0px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      /* text-align: center; */
+      grid-area: content;
+    }
+    body,html {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      background:white;
+    }
+    h2{
+      padding-left: 0px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      padding-top: 20px;
+      letter-spacing: .10em;
+      grid-area: icon;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    }
+    .button1{
+      grid-area:nav;
+  }
+  
+  .button2{
+      padding-left: 80px;
+      grid-area:nav;
+  }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    li{
+      font-weight: 300;
+      display: inline;
+      grid-area: nav;
+     }
+     .hero img {
+      width: 250px;
+      /* display: block; */
+      /* margin-left: auto;
+      margin-right: auto;
+      margin-top: 400px;
+      border-radius: 50%; */
+      grid-area: content;
+      float: right;
+      }
+
+      footer ul {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+      .AboutMe {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        grid-area: content;
+      }
+      .AboutMe2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: left;
+        padding-top: 40px;
+        /* margin-left: 20px; */
+        /* margin-right: 50px; */
+        grid-area: content;
+      }
+      .AboutMe3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: left;
+        padding-top: 40px;
+        /* margin-left: 20px;
+        margin-right: 50px; */
+        padding-bottom: 50px;
+        grid-area: content;
+      }
+      #Layer_1 {
+        width: 200px;
+        padding-top: 0px;
+        padding-left: 0px;
+        grid-area: icon;
+      }
+    #Layer_1{
+        -webkit-animation: color 5s ease infinite;
+        -o-animation: color 5s ease infinite;
+        -moz-animation: color 5s ease linear infinite;
+        animation: color 5s ease infinite;
+      }
+      @keyframes color {
+        0%, 100%{
+        fill: #AFDFDF;
+        }
+        75% {
+          fill: #F3B456;
+        }
+        50% {
+        fill: #946BAE;
+       }
+        20% {
+          fill: #F4ABAB;
+        }
+        }
+        nav {
+          background-color: orangered;
+        }
+        nav a {
+          color: black;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 0.15em;
+          display: inline-block;
+          padding: 15px 20px;
+          position: relative;
+        }
+       nav a:after {    
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background: black;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+       nav a:hover:after { 
+          width: 100%; 
+          left: 0;
+        }
+      
+      footer{
+        background-color: lightgray;
+      }   
+      footer ul a{
+        grid-area: footer;
+        color: black;
+          opacity: 0.6;
+          text-decoration: none;
+          transition: 0.3s;
+          letter-spacing: 0.15em;
+          display: inline-block;
+          padding: 15px 20px;
+      }
+      
+      footer ul a:after {
+        grid-area: footer;
+      }
+      
+      footer ul a:hover {
+        grid-area: footer;
+        opacity: 1;
+        color: lightskyblue;
+      }
+  }  
