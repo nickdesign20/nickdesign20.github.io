@@ -1,8 +1,10 @@
-
-/* li{
-    font-weight: 300;
-    display: inline;
+/* *{
+  outline: 1px;
+  border: green dotted 2px;
+  margin: 0;
+  padding:0;
 } */
+
 .container{
   margin-right:3em;
   min-width:100%;
@@ -25,7 +27,7 @@
 }
 
 .button2{
-    padding-left: 80px;
+    padding-left: 60px;
     grid-area:nav;
 }
 
@@ -38,55 +40,6 @@ h2{
     letter-spacing: .10em;
     grid-area:icon;
 }
-
-/* .button1 {
-    overflow: hidden;
-    background-color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding-left: 20px;
-    padding-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.button2 {
-    overflow: hidden;
-    background-color: white;
-    text-decoration: none;
-    display: inline-block;
-    padding-left: 0px;
-    padding-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-a:link {
-    text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: purple;
-    font-size: 16px;
-    
-  }
-  
-  a:active {
-    text-decoration: underline;
-  } */
  
   body,html {
     margin: 0;
@@ -106,7 +59,7 @@ a:link {
     grid-area: content;
   }
 
-  .AboutMe {
+  .aboutme {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -114,7 +67,7 @@ a:link {
     grid-area: content;
   }
 
-  .AboutMe2 {
+  .aboutme2 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -125,7 +78,7 @@ a:link {
     grid-area: content;
   }
 
-  .AboutMe3 {
+  .aboutme3 {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 300;
@@ -232,6 +185,7 @@ footer ul a:hover {
         font-family: 'Roboto', sans-serif;
     } */
     
+
     li{
         font-weight: 300;
         display: inline;
@@ -324,22 +278,36 @@ footer ul a:hover {
       grid-template-rows: auto;
       grid-template-areas:
             "icon content"
-            "sidebar content"
-            "sidebar content"
+            "nav content"
+            "nav content"
             "footer footer";
     }
     .fa-instagram {
       padding-left: 40px;
     }
+    .content {
+      grid-area: content;
+      padding-top: 100px;
+    }
+    .sidebar {
+      grid-area: nav;
+      background-color: lightgray;
+      text-align: left;
+    }
+    .icon{
+      background-color: lightgray;
+    }
     h3 {
-      padding-top: 0px;
+      padding-top: 50px;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      font-size: 30px;
+      font-size: 50px;
       text-transform: uppercase;
       letter-spacing: 0.13em;
       /* text-align: center; */
-      grid-area: content;
+    }
+    .gdill {
+      background-color: lightgray;
     }
     body,html {
       margin: 0;
@@ -352,80 +320,74 @@ footer ul a:hover {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       font-size: 15px;
-      padding-top: 20px;
+      /* padding-top: 20px; */
       letter-spacing: .10em;
       grid-area: icon;
+      color: lightgray;
   }
   .topnav {
     overflow: hidden;
     background-color: white;
     }
-    .button1{
-      grid-area:nav;
-  }
-  
   .button2{
-      padding-left: 80px;
-      grid-area:nav;
+      padding-left: 20px;
   }
     nav ul {
       display: flex;
       justify-content: space-between;
       flex-direction: column;
+      grid-area: nav;
     }
     li{
       font-weight: 300;
       display: inline;
-      grid-area: nav;
      }
      .hero img {
-      width: 250px;
+      width: 450px;
       /* display: block; */
-      /* margin-left: auto;
-      margin-right: auto;
-      margin-top: 400px;
-      border-radius: 50%; */
+      margin-left: auto;
+      margin-right: 50px;
+      border-radius: 20%;
       grid-area: content;
       float: right;
       }
-
       footer ul {
         max-width: 960px;
         margin: 0 auto;
         padding: 2em;
       }
-      .AboutMe {
+      .aboutme {
         font-family: 'Roboto', sans-serif;
-        font-size: 15px;
-        font-weight: 300;
-        text-align: center;
-        grid-area: content;
-      }
-      .AboutMe2 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 300;
         text-align: left;
-        padding-top: 40px;
-        /* margin-left: 20px; */
-        /* margin-right: 50px; */
         grid-area: content;
+        margin-left: 50px;
+        padding-top: 20px;
       }
-      .AboutMe3 {
+      .aboutme2 {
         font-family: 'Roboto', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 300;
         text-align: left;
-        padding-top: 40px;
-        /* margin-left: 20px;
-        margin-right: 50px; */
+        padding-top: 15px;
+        margin-left: 50px;
+        margin-right: 550px;
+      }
+      .aboutme3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: left;
+        padding-top: 20px;
+        margin-left: 50px;
+        margin-right: 550px;
         padding-bottom: 50px;
-        grid-area: content;
       }
       #Layer_1 {
         width: 200px;
-        padding-top: 0px;
-        padding-left: 0px;
+        padding-top: 50px;
+        padding-left: 60px;
         grid-area: icon;
       }
     #Layer_1{
@@ -449,7 +411,8 @@ footer ul a:hover {
         }
         }
         nav {
-          background-color: orangered;
+          background-color: lightgray;
+          grid-area: nav;
         }
         nav a {
           color: black;
@@ -465,7 +428,7 @@ footer ul a:hover {
           bottom: 0;
           content: "";
           display: block;
-          height: 2px;
+          height: 1.5px;
           left: 50%;
           position: absolute;
           background: black;
@@ -476,27 +439,21 @@ footer ul a:hover {
           width: 100%; 
           left: 0;
         }
-      
       footer{
-        background-color: lightgray;
+        background-color: White;
+        grid-area: footer;
+        padding-left: 250px;
       }   
       footer ul a{
-        grid-area: footer;
         color: black;
           opacity: 0.6;
           text-decoration: none;
           transition: 0.3s;
-          letter-spacing: 0.15em;
+          letter-spacing: 5em;
           display: inline-block;
           padding: 15px 20px;
       }
-      
-      footer ul a:after {
-        grid-area: footer;
-      }
-      
       footer ul a:hover {
-        grid-area: footer;
         opacity: 1;
         color: lightskyblue;
       }

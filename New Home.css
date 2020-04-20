@@ -101,5 +101,121 @@
       text-decoration: none;
       color: green;
   }
+  body,html {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background:white;
+  }
+
+  @media (min-width:1040px){
+    .container{
+      width:100%;
+      height:100vh;
+      display:grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "icon content"
+            "sidebar content"
+            "sidebar content"
+            "footer footer";
+    }
+    body,html {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      background:white;
+    }
+    .hero img {
+      width: 250px;
+      /* display: block; */
+      /* margin-left: auto;
+      margin-right: auto;
+      margin-top: 400px;
+      border-radius: 50%; */
+      grid-area: content;
+      float: right;
+      }
+      footer ul {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2em;
+      }
+      li{
+        font-weight: 300;
+        display: inline;
+        grid-area: nav;
+       }
+       .AboutMe {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: center;
+        grid-area: content;
+      }
+      .AboutMe2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: left;
+        padding-top: 40px;
+        /* margin-left: 20px; */
+        /* margin-right: 50px; */
+        grid-area: content;
+      }
+      .AboutMe3 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        text-align: left;
+        padding-top: 40px;
+        /* margin-left: 20px;
+        margin-right: 50px; */
+        padding-bottom: 50px;
+        grid-area: content;
+      }
+      nav a {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+      }
+     nav a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: black;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+     nav a:hover:after { 
+        width: 100%; 
+        left: 0;
+      }
+      footer ul {
+        max-width: 640px;
+        margin: 2em auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+    }
+    footer ul li {
+        list-style: none;
+        align-self: flex-end;
+    }
+    footer ul li a {
+        text-decoration: none;
+        color: green;
+  }
+}
 
   
