@@ -32,10 +32,10 @@
 }
 
 h2{
-    padding-left: 150px;
+    padding-left: 100px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 20px;
     padding-top: 20px;
     letter-spacing: .10em;
     grid-area:icon;
@@ -287,15 +287,17 @@ footer ul a:hover {
     }
     .content {
       grid-area: content;
-      padding-top: 100px;
+      padding-top: 140px;
+      background-image: url(website-background.svg);
+      background-repeat: no-repeat;
     }
     .sidebar {
       grid-area: nav;
-      background-color: lightgray;
+      background-color: whitesmoke;
       text-align: left;
     }
     .icon{
-      background-color: lightgray;
+      background-color: whitesmoke;
     }
     h3 {
       padding-top: 50px;
@@ -307,7 +309,7 @@ footer ul a:hover {
       /* text-align: center; */
     }
     .gdill {
-      background-color: lightgray;
+      background-color: whitesmoke;
     }
     body,html {
       margin: 0;
@@ -323,7 +325,7 @@ footer ul a:hover {
       /* padding-top: 20px; */
       letter-spacing: .10em;
       grid-area: icon;
-      color: lightgray;
+      color: whitesmoke;
   }
   .topnav {
     overflow: hidden;
@@ -411,7 +413,7 @@ footer ul a:hover {
         }
         }
         nav {
-          background-color: lightgray;
+          background-color: whitesmoke;
           grid-area: nav;
         }
         nav a {
