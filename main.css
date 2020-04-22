@@ -22,6 +22,17 @@
         "footer";
 }
 
+.aboutme3 a{
+  color: black;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.aboutme3 a:hover {
+  opacity: 1;
+  color: lightskyblue;
+}
+
 .button1{
     grid-area:nav;
 }
@@ -138,9 +149,9 @@ h2{
     left: 0;
   }
 
-footer{
+/* footer{
   background-color: lightgray;
-} 
+}  */
 
 footer ul a{
   grid-area: footer;
@@ -190,7 +201,9 @@ footer ul a:hover {
         font-weight: 300;
         display: inline;
     }
-
+    footer{
+      background-color: whitesmoke;
+    } 
     img {
       width: 400px;
       display: block;
@@ -442,7 +455,7 @@ footer ul a:hover {
           left: 0;
         }
       footer{
-        background-color: White;
+        /* background-color: White; */
         grid-area: footer;
         padding-left: 250px;
       }   
@@ -456,6 +469,16 @@ footer ul a:hover {
           padding: 15px 20px;
       }
       footer ul a:hover {
+        opacity: 1;
+        color: lightskyblue;
+      }
+      .aboutme3 a{
+        color: black;
+        opacity: 0.6;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      .aboutme3 a:hover {
         opacity: 1;
         color: lightskyblue;
       }
