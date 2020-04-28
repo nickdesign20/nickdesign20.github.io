@@ -37,3 +37,8 @@ $(document).ready(function() {
 
 });
 /*Scroll to top when arrow up clicked END*/  
+
+
+
+var path = document.querySelector('.path');
+var length = path.getTotalLength();

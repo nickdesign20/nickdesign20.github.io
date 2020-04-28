@@ -301,7 +301,7 @@ footer ul a:hover {
     .content {
       grid-area: content;
       padding-top: 140px;
-      background-image: url(website-background.svg);
+      background-image: url(additionals/website-background.svg);
       background-repeat: no-repeat;
     }
     .sidebar {
