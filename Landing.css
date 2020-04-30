@@ -5,42 +5,22 @@
   padding:0;
 } */
 
-.container{
-  margin-right:3em;
-  min-width:100%;
-  /* background-color: green; */
-  /* width:100%; */
-  height:100vh;
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-        "nav"
-        "icon"
-        "Portrait"
-        "content"
-        "footer";
-}
-
-.button1{
-    grid-area:nav;
-}
-
-.button2{
-    padding-left: 40px;
-    grid-area:nav;
-}
-
-h2{
-    padding-left: 85px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    padding-top: 20px;
-    letter-spacing: .10em;
-    grid-area:icon;
-}
- 
+  .button1{
+      grid-area:nav;
+  }
+  .button2{
+      padding-left: 40px;
+      grid-area:nav;
+  }
+  h2{
+      padding-left: 85px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 20px;
+      padding-top: 20px;
+      letter-spacing: .10em;
+      grid-area:icon;
+  }
   body,html {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -76,62 +56,112 @@ h2{
 
 
 @media screen and (max-width: 800px) {
-
-    /* .container{
-        display: grid;
-        grid-gap: 15px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "h"
-        "b"
-        "c"
-        "l"
-        "r"
-        "a"
-        "e"
-        "s"
-        "f";
-    } */
-    /* .body{
-        font-family: 'Roboto', sans-serif;
-    } */
-    
-
+    .container{
+      margin-right:3em;
+      min-width:100%;
+      /* background-color: green; */
+      /* width:100%; */
+      height:100vh;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "nav"
+            "icon"
+            "Portrait"
+            "content"
+            "footer";
+      }
+    h2{
+      color: white;
+    }
     li{
         font-weight: 300;
         display: inline;
     }
+    #Layer_1 {
+      width: 1px;
+      padding-top: 0px;
+      fill: white;
+    }
+    #Layer_2 {
+        fill: white;
+        stroke-width: 1.5px;
+        width: 350px;
+        padding-top: 100px;
+        padding-left: 70px;
+        grid-area:icon;
+        position: absolute;
+    }
+    .path {
+      stroke-dasharray: 3000;
+      stroke-dashoffset: 3000;
+      animation: dash 8s linear forwards;
+      /* animation: dash 10s infinite linear; */
+    }
+    
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    .hero {
+      /* background-image: radial-gradient(50% 176%, #253854 80%, #061922 100%); */
+      /* min-height: 100vh; */
+      min-height: 60rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .snow {
+      position: absolute;
+      min-width: 200vw;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    .snow .svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    #snow-top-layer {
+      will-change: transform;
+      transform: translateY(-768px);
+      animation: fall 22.5s infinite linear;
+      animation-delay: 6s;
+    }
+    #snow-bottom-layer {
+      will-change: transform;
+      transform: translateY(-768px);
+      animation: fall 45s infinite linear;
+      animation-delay: 6s;
+    }
+    #snow-mid-layer {
+      will-change: transform;
+      transform: translateY(-768px);
+      animation: fall 30s infinite linear;
+      animation-delay: 6s;
+    }
+    #snow-back-layer {
+      will-change: transform;
+      transform: translateY(-768px);
+      animation: fall 45s infinite linear;
+      animation-delay: 6s;
+    }
+    
+    @keyframes fall {
+      
+      100% {
+        transform: translateY(0);
+      }
+    }
 }
 
-#Layer_1 {
-    width: 350px;
-    padding-top: 200px;
-    padding-left: 70px;
-    grid-area:icon;
-  }
-  
-#Layer_1{
-    -webkit-animation: color 5s ease infinite;
-    -o-animation: color 5s ease infinite;
-    -moz-animation: color 5s ease linear infinite;
-    animation: color 5s ease infinite;
-  }
-  
-  @keyframes color {
-    0%, 100%{
-    fill: #AFDFDF;
-    }
-    75% {
-      fill: #F3B456;
-    }
-    50% {
-    fill: #946BAE;
-   }
-    20% {
-      fill: #F4ABAB;
-    }
-    }
+
 
   /* Desktop styling below */
   @media (min-width:1040px){
@@ -150,7 +180,6 @@ h2{
     
     .content {
       grid-area: content;
-      /* padding-top: 140px; */
       /* background-image: url(website-background.svg);
       background-repeat: no-repeat; */
     }
@@ -257,11 +286,11 @@ h2{
       #Layer_2{
         width: 500px;
         fill: white;
+        fill-opacity: .5;
         stroke-width: 1.5px;
         padding-left: 400px;
         padding-top: 200px;
         position: absolute;
-        
       }
       .path {
         stroke-dasharray: 3000;
@@ -340,6 +369,4 @@ h2{
         }
         
       }
-      
-
   }  

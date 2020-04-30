@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Positive and Negative Posters</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="portfolio-page-3.css">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">  
+                <nav>
+                    <ul>
+                        <li><a class="button1" href="Portfolio.html">Portfolio</a></li>
+                        <li><a class="button2" href="about.html">About Me</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        
+            <div class="colorchange icon">
+                <a class ="nplogo" href="index.html">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 405.2 287.5" style="enable-background:new 0 0 405.2 287.5;" xml:space="preserve">
+                  <style type="text/css">
+                  </style>
+                  <path class="st0" d="M344,0H206.1v228.5L62.3,0H0v287.5h57.3V85.6l122.1,201.9h84.8V58.2h57.3c0,0,16.9,5.9,15.8,33.2
+                      c0,0,3.2,25.8-16.1,29h-32v55.8c0,0,115.2,22.5,115.7-85.3C405,90.9,412.3,3.6,344,0z"/>
+                  </svg>
+                </a>
+            </div>
+        
+           <header class="gdill">
+               <h1>Graphic Designer || Illustrator</h1>
+           </header>
+
+           <div class="description">
+            <p>My favorite project from Intro to GD was actually a collection of multiple projects, all focused on developing a singular product. The product had to be sold in stores and whatever it was, had to be made with insects or something insects produce themselves. Kinda cool right? I chose to create a pomade using natural ingredients and beeswax, hence Buzz Pom. I designed a logo, package, and brand standards for my product, and once it was all finished…I almost put it up for sale at Walmart.</p>
+
+        </div>
+           
+        <div class="content">
+            <h2>Buzz Pom</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img src="portfolio-images/Bee.jpg" width="400px">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="portfolio-images2/buzz-pom-package.jpg" width="400px">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:right">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                </div>
+            
+            <script src="" async defer></script>
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>           
+                        
+       
+        
+    </div>
+    </body>

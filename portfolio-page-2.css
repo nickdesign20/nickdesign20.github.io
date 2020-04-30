@@ -124,10 +124,10 @@
         grid-template-columns: 300px 1fr;
         grid-template-rows: auto;
         grid-template-areas:
-              "icon content"
-              "nav content"
-              "nav content"
-              "footer footer";
+              "icon content de"
+              "nav content de"
+              "nav content de"
+              "footer footer footer";
       }
       .fa-instagram {
         padding-left: 40px;
@@ -240,7 +240,7 @@
         .mySlides {display: none}
         img {
             display: block;
-            margin-left: auto;
+            margin-left: 150px;
             margin-right: auto;
         }
 
@@ -321,10 +321,21 @@
         .prev, .next,.text {font-size: 11px}
         }
 
-        h2{position: relative;
+        h2 {
+            position: relative;
             left: 50px;
             font-family: 'Roboto', sans-serif;
             font-size: 50px;
             color: darkslategray;
+            grid-area: content;
+            letter-spacing: 1px;
         }
+        .description {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+          grid-area: de;
+          margin-right: 200px;
+          margin-top: 200px;
+          margin-left: 300px;
+      }
     } 
