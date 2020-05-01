@@ -188,35 +188,12 @@ footer ul a:hover {
           "content"
           "footer";
   }
-    li{
-        font-weight: 300;
-        display: inline;
-    }
-    footer{
-      background-color: whitesmoke;
-    } 
-    img {
-      width: 350px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      /* padding-top: 500px; */
-      margin-top: 300px;
-      border-radius: 50%;
-      grid-area: Portrait;
-  }
-
-    .topnav {
-        overflow: hidden;
-        background-color: white;
-    }
-}
-
-#Layer_1 {
-    width: 350px;
-    padding-top: 200px;
-    padding-left: 70px;
+  #Layer_1 {
+    width: 200px;
+    padding-top: 50px;
+    padding-left: 100px;
     grid-area:icon;
+    align-content: center;
   }
   
 #Layer_1{
@@ -240,6 +217,33 @@ footer ul a:hover {
       fill: #F4ABAB;
     }
     }
+    h2{
+      color: white;
+      font-size: 1px;
+    }
+    li{
+        font-weight: 300;
+        display: inline;
+    }
+    footer{
+      background-color: whitesmoke;
+    } 
+    img {
+      width: 350px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-top: 500px; */
+      margin-top: 100px;
+      border-radius: 50%;
+      grid-area: Portrait;
+  }
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+    }
+}
 
 
     /* <!-- Button to get back to top of page --> */
