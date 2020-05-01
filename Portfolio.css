@@ -32,10 +32,9 @@ h2{
     background:white;
   }
 
-  .fa-instagram {
+  /* .fa-instagram {
     padding-left: 20px;
-    /* padding-top: 50px; */
-  }
+  } */
 
  nav a {
     color: black;
@@ -104,7 +103,7 @@ footer ul a:hover {
   #Layer_1 {
     width: 200px;
     padding-top: 50px;
-    padding-left: 120px;
+    padding-left: 100px;
     grid-area:icon;
     align-content: center;
   }
@@ -148,7 +147,7 @@ footer ul a:hover {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-gap: 80px;
-      margin-top: 70px;
+      margin-top: 50px;
       margin-bottom: 0px;
       margin-left: 70px;
       margin-right: 70px;
