@@ -75,6 +75,15 @@ h1{
             "content"
             "footer";
     }
+    p {
+      font-family: 'Roboto', sans-serif;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 40px;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+    }
     li{
         font-weight: 300;
         display: inline;
@@ -83,12 +92,12 @@ h1{
       background-color: whitesmoke;
     } 
     #Layer_1 {
-      width: 350px;
-      padding-top: 200px;
-      padding-left: 70px;
+      width: 200px;
+      padding-top: 50px;
+      padding-left: 100px;
       grid-area:icon;
+      align-content: center;
     }
-    
   #Layer_1{
       -webkit-animation: color 5s ease infinite;
       -o-animation: color 5s ease infinite;
@@ -109,6 +118,26 @@ h1{
       20% {
         fill: #F4ABAB;
       }
+      }
+
+      h1{
+        color: white;
+        font-size: 1px;
+      }
+      h2{
+        grid-area: icon;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+      }
+      img {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+      }
+      .classname {
+        margin-top: -10px;
       }
 
 }
