@@ -243,6 +243,9 @@ footer ul a:hover {
         overflow: hidden;
         background-color: white;
     }
+    footer ul a {
+      letter-spacing: .10em;
+    }
 }
 
 
