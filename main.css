@@ -226,6 +226,7 @@ footer ul a:hover {
         display: inline;
     }
     footer{
+      width: 100%;
       background-color: whitesmoke;
     } 
     img {

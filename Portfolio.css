@@ -124,6 +124,7 @@ footer ul a:hover {
         display: inline;
     }
     footer{
+      width: 100%;
       background-color: whitesmoke;
     } 
 
@@ -141,6 +142,10 @@ footer ul a:hover {
       "a"
       "b"
       "c";
+  }
+  img {
+    max-width: 100%;
+    overflow: hidden;
   }
   .box-styling {
     height: 350px;
