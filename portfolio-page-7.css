@@ -75,6 +75,13 @@ h1{
             "content"
             "footer";
     }
+    .tlout {
+      font-size: 40px;
+    }
+    .tlout2 {
+      font-size: 40px;
+      margin-top: -30px;
+    }
     nav {
       background-color: whitesmoke;
     }
@@ -163,6 +170,9 @@ h1{
             "nav content de"
             "nav content de"
             "footer footer footer";
+    }
+    .tlout2 {
+      margin-top: -30px;
     }
     .fa-instagram {
       padding-left: 40px;
