@@ -5,23 +5,6 @@
   padding:0;
 } */
 
-.container{
-  margin-right:3em;
-  min-width:100%;
-  /* background-color: green; */
-  /* width:100%; */
-  height:100vh;
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-        "nav"
-        "icon"
-        "Portrait"
-        "content"
-        "footer";
-}
-
 .button1{
     grid-area:nav;
 }
@@ -74,121 +57,103 @@ h1{
     left: 0;
   }
 
-@media screen and (max-width: 800px) {
-  .container{
-    margin-right:3em;
-    min-width:100%;
-    /* background-color: green; */
-    /* width:100%; */
-    height:100vh;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-          "nav"
-          "icon"
-          "Portrait"
-          "content"
-          "footer";
-  }
-  p {
-    font-family: 'Roboto', sans-serif;
-    margin-left: 50px;
-    margin-right: 80px;
-    margin-top: 40px;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-  }
-  li{
-      font-weight: 300;
-      display: inline;
-  }
-  footer{
-    background-color: whitesmoke;
-  } 
-  #Layer_1 {
-    width: 200px;
-    padding-top: 50px;
-    padding-left: 100px;
-    grid-area:icon;
-    align-content: center;
-  }
-#Layer_1{
-    -webkit-animation: color 5s ease infinite;
-    -o-animation: color 5s ease infinite;
-    -moz-animation: color 5s ease linear infinite;
-    animation: color 5s ease infinite;
-  }
-  
-  @keyframes color {
-    0%, 100%{
-    fill: #AFDFDF;
+  @media screen and (max-width: 800px) {
+    .container{
+      margin-right:3em;
+      min-width:100%;
+      /* background-color: green; */
+      /* width:100%; */
+      height:100vh;
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+            "nav"
+            "icon"
+            "Portrait"
+            "content"
+            "footer";
     }
-    75% {
-      fill: #F3B456;
-    }
-    50% {
-    fill: #946BAE;
-   }
-    20% {
-      fill: #F4ABAB;
-    }
-    }
-
-    h1{
-      color: white;
-      font-size: 1px;
-    }
-    h2{
-      grid-area: icon;
-      text-align: center;
-      font-weight: 700;
-      font-family: 'Roboto', sans-serif;
-      font-size: 50px;
-    }
-    img {
-      width: 350px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 60px;
-      grid-area: Portrait;
+    nav {
+      background-color: whitesmoke;
     }
     .classname {
       margin-top: -10px;
     }
-}
-
-#Layer_1 {
-    width: 350px;
-    padding-top: 200px;
-    padding-left: 70px;
-    grid-area:icon;
+    p {
+      font-family: 'Roboto', sans-serif;
+      margin-left: 50px;
+      margin-right: 80px;
+      margin-top: 40px;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: left;
+    }
+    li{
+        font-weight: 300;
+        display: inline;
+    }
+    footer{
+      background-color: whitesmoke;
+    } 
+    #Layer_1 {
+      width: 200px;
+      padding-top: 50px;
+      padding-left: 100px;
+      grid-area:icon;
+      align-content: center;
+    }
+  #Layer_1{
+      -webkit-animation: color 5s ease infinite;
+      -o-animation: color 5s ease infinite;
+      -moz-animation: color 5s ease linear infinite;
+      animation: color 5s ease infinite;
+    }
+    
+    @keyframes color {
+      0%, 100%{
+      fill: #AFDFDF;
+      }
+      75% {
+        fill: #F3B456;
+      }
+      50% {
+      fill: #946BAE;
+     }
+      20% {
+        fill: #F4ABAB;
+      }
+      }
+  
+      h1{
+        color: white;
+        font-size: 1px;
+      }
+      h2{
+        grid-area: icon;
+        text-align: center;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+      }
+      img {
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+        grid-area: Portrait;
+      }
+      .classname {
+        margin-top: -10px;
+      }
+      
   }
   
-#Layer_1{
-    -webkit-animation: color 5s ease infinite;
-    -o-animation: color 5s ease infinite;
-    -moz-animation: color 5s ease linear infinite;
-    animation: color 5s ease infinite;
-  }
-  
-  @keyframes color {
-    0%, 100%{
-    fill: #AFDFDF;
-    }
-    75% {
-      fill: #F3B456;
-    }
-    50% {
-    fill: #946BAE;
-   }
-    20% {
-      fill: #F4ABAB;
-    }
-    }
 
+
+
+  
 
   /* Desktop styling below */
   @media (min-width:1040px){

@@ -71,37 +71,6 @@ h2{
     grid-area: content;
   }
 
-  .aboutme {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    grid-area: content;
-  }
-
-  .aboutme2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-    grid-area: content;
-  }
-
-  .aboutme3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 50px;
-    grid-area: content;
-  }
-
   .fa-instagram {
     padding-left: 20px;
     /* padding-top: 50px; */
@@ -187,6 +156,40 @@ footer ul a:hover {
           "Portrait"
           "content"
           "footer";
+  }
+  .aboutme {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 50px;
+    grid-area: content;
+  }
+
+  .aboutme2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    grid-area: content;
+  }
+
+  .aboutme3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+    grid-area: content;
+  }
+  nav {
+    background-color: whitesmoke;
   }
   #Layer_1 {
     width: 200px;
