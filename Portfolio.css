@@ -84,7 +84,10 @@ footer ul a:hover {
 }
 
 @media screen and (max-width: 800px) {
-  
+  nav {
+    background-color: whitesmoke;
+  }
+
   #Layer_1 {
     width: 200px;
     padding-top: 50px;
@@ -126,6 +129,7 @@ footer ul a:hover {
     footer{
       width: 100%;
       background-color: whitesmoke;
+      float: left;
     } 
 
     .image-gallery {
@@ -134,6 +138,8 @@ footer ul a:hover {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
       grid-gap: 80px;
+      height: auto;
+      width: auto;
       margin-top: 50px;
       margin-bottom: 0px;
       margin-left: 60px;
@@ -143,7 +149,7 @@ footer ul a:hover {
       "b"
       "c";
   }
-  img {
+  pre {
     max-width: 100%;
     overflow: hidden;
   }

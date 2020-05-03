@@ -353,7 +353,7 @@ h1{
       .prev, .next,.text {font-size: 11px}
       }
 
-      h2 {
+      /* h2 {
           position: relative;
           left: 50px;
           font-family: 'Roboto', sans-serif;
@@ -361,7 +361,7 @@ h1{
           color: darkslategray;
           grid-area: content;
           letter-spacing: 1px;
-      }
+      } */
       .description {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
@@ -370,4 +370,78 @@ h1{
         margin-top: 200px;
         margin-left: 300px;
     }
+    /* In Left Animation Below */
+  @-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+    .in-left {
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 0.8s;
+        -o-animation-duration: 0.8s;
+        animation-duration: 1s;
+        -webkit-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
+        -o-animation-duration:0.8s;
+        animation-delay: 0.8s;
+        position: relative;
+        left: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        color: darkslategray;
+        grid-area: content;
+        letter-spacing: 1px;
+    }  
   } 
