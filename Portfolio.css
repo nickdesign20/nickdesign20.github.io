@@ -131,6 +131,12 @@ footer ul a:hover {
       background-color: whitesmoke;
       float: left;
     } 
+    /* Trying this for footer */
+    footer ul {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2em;
+    }
 
     .image-gallery {
       height: 100%;
@@ -148,6 +154,13 @@ footer ul a:hover {
       "a"
       "b"
       "c";
+  }
+  img {
+    display: block;
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
   }
   pre {
     max-width: 100%;
